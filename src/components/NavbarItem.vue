@@ -1,7 +1,7 @@
 <template>
   <nav>
     <v-app-bar app dark color="black">
-      <v-icon class="mr-2">fas fa-video</v-icon>
+      <v-icon class="mr-2 ml-6">fas fa-video</v-icon>
       <v-toolbar-title class="">Netflux</v-toolbar-title>
       <v-btn text class="ml-4" to="/">Accueil</v-btn>
       <v-btn text class="ml-4" to="/">Film</v-btn>

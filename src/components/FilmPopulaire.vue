@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-3">
+  <div class="mx-8">
     <h2 class="mt-2  grey--text">Films Populaires</h2>
     <v-container fluid class="mt-2" >
       <v-row class="grey">

@@ -1,6 +1,6 @@
 <template>
 <div id="carousel">
-  <h2 class="mx-2 grey--text">Prochaines Exclusivités</h2>
+  <h2 class="mx-10 grey--text">Prochaines Exclusivités</h2>
   <carousel-3d :controls-visible="true" :clickable="false" :key="sortieFilm.length"
                :listData="sortieFilm" :height="400">
 

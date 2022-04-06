@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row>
-        <v-col cols="12" sm="4" class="mt-3">
+        <v-col cols="12" sm="3" class="mt-3 ml-0">
           <v-hover v-slot="{hover}"
                    open-delay="200">
             <v-card :elevation="hover ? 16:2" :class="{'on-hover': hover}">
@@ -15,7 +15,7 @@
           </v-hover>
         </v-col>
 
-        <v-col cols="12" sm="6">
+        <v-col cols="10" sm="6">
           <h1 class=" grey--text text--darken-3 subheader">
             {{ this.movie.title }}
           </h1>
@@ -30,7 +30,7 @@
 
               </v-rating>
             </v-col>
-            <v-col cols="12" sm="4">
+            <v-col cols="10" sm="4">
               <span class="mt-6 ml-4 grey--text text--darken subheader">
                 {{ movie.vote_average}}/10 {{ movie.release_date }}
               </span>
@@ -59,8 +59,8 @@
                 max-width="800px"
             class="ml-3">
 
-              <template v-slot:activator="{on, attrs}">
-                <v-btn  color="warning" class="white--text" v-bind="attrs" v-on="on" @click.prevent="videoModel">
+              <template v-slot:activator="{on, attributs}">
+                <v-btn  color="warning" class="white--text" v-bind="attributs" v-on="on" @click.prevent="videoModel">
                   <v-icon>mdi-play</v-icon>
                   Play
                 </v-btn>
@@ -83,7 +83,7 @@
                 </v-card-text>
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn color="purple" text @click="dialog = false">Close</v-btn>
+                  <v-btn color="purple" text @click="dialog = false">Fermer</v-btn>
                 </v-card-actions>
               </v-card>
             </v-dialog>
@@ -161,10 +161,13 @@ export default {
 
 <style scoped>
 .video-container {
-  overflow: hidden;
-  padding-top: 50%;
   position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
+
 
 .video-container iframe {
   border: 0;
